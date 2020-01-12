@@ -1,13 +1,19 @@
-# Slack Bolt - Hello World
+# FAQBot - MOSA Hackathon - Winter 2020
 
-This is a simple example App built with [Slack's Bolt Framework](https://slack.dev/bolt/tutorial/getting-started) for node.js.
+FAQBot is an interactive Slack chat bot designed to assist new MCIT students with questions they have upon on-boarding to the program. 
 
-Our App shows a welcome message when a user opens the "app home".
+### Tutorial
+
+To create an app using the Bolt Framework [Slack's Bolt Framework](https://slack.dev/bolt/tutorial/getting-started) for node.js.
+
+### Demo Video
+* [FAQBot] (https://youtu.be/n3St1_A9jyc)
 
 ### Slack API & features used in the app
 
 * The [`app_home_opened`](https://api.slack.com/events/app_home_opened) event gets triggered when a user opens the bot's "app home" for the first time
 * The app uses the Bolt's `say` method to send a welcome message to the user
+* Cnversations are initiated with key words
 
 ### Requirements
 
@@ -19,8 +25,9 @@ Our App shows a welcome message when a user opens the "app home".
 
 * [`chat:write`](https://api.slack.com/scopes/chat:write)
 
-### Events
+### Conversations
 
-#### Workspace events
-* [`app_home_opened`](https://api.slack.com/events/app_home_opened)
+* Scripts can be written as code blocks, and GitHub has several repositories with examples for optimizing code structure
+
+
 
