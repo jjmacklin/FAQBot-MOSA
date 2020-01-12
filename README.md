@@ -7,7 +7,7 @@ FAQBot is an interactive Slack chat bot designed to assist new MCIT students wit
 To create an app using the Bolt Framework [Slack's Bolt Framework](https://slack.dev/bolt/tutorial/getting-started) for node.js.
 
 ### Demo Video
-* [FAQBot] (https://youtu.be/n3St1_A9jyc)
+* [FAQBot](https://youtu.be/n3St1_A9jyc)
 
 ### Slack API & features used in the app
 
