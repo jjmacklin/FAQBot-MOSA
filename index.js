@@ -6,6 +6,8 @@ const app = new App({
   token: process.env.SLACK_BOT_TOKEN
 });
 
+//When user clicks on FAQBot App
+//Event is triggered which starts the interaction
 
 app.event('app_home_opened', ({ event, say }) => {  
   // Look up the user from DB
@@ -32,6 +34,9 @@ app.event('app_home_opened', ({ event, say }) => {
   console.log('⚡️ Bolt app is running!');
 })();
 
+//Upon user saying hello//
+//FAQBot provides overview//
+
 app.message('hello', ({ message, say }) => {
   // say() sends a message to the channel where the event was triggered
   say({
@@ -45,12 +50,12 @@ app.message('hello', ({ message, say }) => {
     
     },
     {
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "• Course Difficulty \n • What order to take core classes \n • Where to book Office Hours \n • Weekly hours spent on homework"
-			}
-		},  
+	"type": "section",
+	"text": {
+	 "type": "mrkdwn",
+	 "text": "• Course Difficulty \n • What order to take core classes \n • Where to book Office Hours \n • Weekly hours spent on homework"
+	}
+     },  
     ]
   });
 });
@@ -70,12 +75,12 @@ app.event ('app_mention', ({ event, say }) => {
     
     },
     {
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "• Course Difficulty \n • What order to take core classes \n • Where to book Office Hours \n • Weekly hours spent on homework"
-			}
-		},  
+	"type": "section",
+	"text": {
+	  "type": "mrkdwn",
+	  "text": "• Course Difficulty \n • What order to take core classes \n • Where to book Office Hours \n • Weekly hours spent on homework"
+	}
+     },  
     ]
   });
 });
@@ -96,7 +101,7 @@ app.message('order', ({ say }) => say('Your fellow classmates believe the best p
 //When someone asks about course difficulty
 //FAQbot responds with student opinions
 
-app.message('hard', ({ say }) => say('Many students say 595 and 595 are the most difficult core classes.'));
+app.message('hard', ({ say }) => say('Many students say 593 and 595 are the most difficult core classes.'));
 
 
 //When someone asks how to book office hours
